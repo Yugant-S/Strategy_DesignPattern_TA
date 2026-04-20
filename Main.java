@@ -1,17 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Main Class: Entry point of the Online Payment System
- *
- * Demonstrates the Strategy + Factory Design Pattern in action:
- *   - User selects a payment method at runtime (Strategy Pattern)
- *   - The appropriate strategy object is created via factory (Factory Pattern)
- *   - PaymentContext delegates payment to the chosen strategy
- *
- * Design Patterns Used:
- *   1. Strategy Pattern  - PaymentStrategy, CreditCardPayment, UPIPayment, PaypalPayment
- *   2. Factory Pattern   - PaymentFactory
- */
 public class Main {
 
     public static void main(String[] args) {
@@ -52,7 +40,7 @@ public class Main {
                 break;
             }
 
-            // Use Factory to get the strategy object based on user choice
+            // get the strategy object based on user choice
             PaymentStrategy selectedStrategy = PaymentFactory.getPaymentMethod(choice);
 
             // Handle invalid menu choices
