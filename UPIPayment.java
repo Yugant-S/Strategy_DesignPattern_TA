@@ -6,12 +6,6 @@
  * In a real-world scenario, this would integrate with UPI APIs.
  */
 public class UPIPayment implements PaymentStrategy {
-
-    /**
-     * Processes payment via UPI.
-     *
-     * @param amount The amount to be paid
-     */
     @Override
     public void pay(int amount) {
         System.out.println("------------------------------------");
