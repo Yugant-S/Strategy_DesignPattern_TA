@@ -6,12 +6,6 @@
  * number validation, bank API calls, etc.
  */
 public class CreditCardPayment implements PaymentStrategy {
-
-    /**
-     * Processes payment via Credit Card.
-     *
-     * @param amount The amount to be paid
-     */
     @Override
     public void pay(int amount) {
         System.out.println("------------------------------------");
